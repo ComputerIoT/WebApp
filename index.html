@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> Optimal Energy Conversion</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="assets/js/highcharts.js"></script>
+
+<style>
+    body{
+        background:#0D182E;
+        color:white;
+    }
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 15%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #013A43;
+  cursor:pointer;
+}
+hr{
+    border:none;
+    border-bottom: solid #19518D 0.5px;
+}
+.main {
+  float: left;
+  width: 65%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #0B1E31;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  border:solid #013A43;
+  border-radius:10px;
+  min-height:70vh;
+}
+.cht1{
+    display:flex; 
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+  .cht1{
+    display:block; 
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  .cht1{
+    display:block; 
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#000000;padding:5px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; ">
+  <div style="display:flex;">
+    <div>
+        <img src="assets/img/logo.png" style="width:50px;" />
+    </div>
+    <div style="flex:1; padding:10px; font-weight:800; font-size:20px;">
+         Optimal Energy Conversion
+    </div>
+  </div>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"> Roller </div>
+    <div class="menuitem"> Solar </div>
+    <div class="menuitem"> Grid </div>
+    <div class="menuitem"> Battery Bank </div>
+    <div class="menuitem"> Notifications</div>
+    <div class="menuitem"> Costs </div>
+  </div>
+
+  <div class="main">
+    <style>
+        .tbs{
+           display: none;
+            width:100%;
+            color: #919DA4;
+        }
+        .tb1{
+            display:block;
+        }
+        h3{
+            color:#00B88E
+        }
+    </style>
+    <div class="tbs tb1">
+        <h1> Roller  </h1>
+        <p> show the amount of power generated from the roller </p>
+        <hr>
+        <div class="cht1" style="width:100%;">
+           <div style="flex:5;">
+             A
+           </div>
+           <div style="flex:2;">
+            <div style="width:100%; min-height:160px;">
+               B1 
+            </div>
+            <div style="width:100%; min-height:160px;">
+               B2 
+            </div>
+            <div style="width:100%; min-height:160px;">
+               B3
+            </div>
+           </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="right">
+    <h3> What is Energy Conversion?</h3>
+    <p>  Energy Conversion is the process of changing energy from one form to another</p>
+    <h3> Theory, How? </h3>
+    <p> By using the roller mechanism method, kinetic energy is converted to potential energy when cars pass over a speed bump </p>
+    <h3> Purpose, Why?</h3>
+    <P>To reduce the use of Grid Electricity for streetlights</P>
+  </div>
+</div>
+
+
+<div style="background-color:#191926;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
